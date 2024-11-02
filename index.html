@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaharyar Portfolio</title>
+    <style>
+        *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background: #424242;
+  --color: rgb(2, 2, 165);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+#name {
+  color: white;
+}
+#name span{
+  color: var(--color);
+  display: inline;
+}
+header {
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.2em;
+}
+header ul li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 2.5em;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+ 
+}
+header ul li a::before{
+  content: '';
+  border: 2px solid var(--color);
+  border-radius: 4px;
+  position: absolute  ;
+  width: 100%;
+  top: -70%;
+  transform: scale(0, 1);
+  transition: transform 250ms ease-in-out;
+  transform-origin: left;
+}
+
+header ul li a:hover::before{
+    transform: scale(1, 1);
+    transition: transform 250ms ease-in-out;
+}
+
+header button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+  background-color: white;
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.308);
+  transform: scale(1.02);
+}
+header button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1);
+}
+.body {
+  width: 77%;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+.info {
+  width: 40%;
+  font-size: 1.4rem;
+}
+.lorem {
+  width: 50%;
+  margin-top: 2em;
+}
+.Name {
+  display: inline;
+  color: rgb(2, 2, 165);
+}
+.buttons {
+  margin-top: 1.7em;
+}
+header ul li:nth-child(3) a,
+header ul li:nth-child(1) a,
+header ul li:nth-child(5) a{
+    color: rgb(193, 126, 255);
+    font-weight: 540;
+    font-size: 0.85rem;
+}
+.exp {
+  margin-left: 1em;
+  background-color: var(--color);
+  color: white;
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.hire {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="name"><h1 class="name"><span>Shaharyar </span>Zia</h1></div>
+        <div class="navbar">
+            <ul>
+                <div class="|">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Education</a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="contact"><button>Contact Me </button></div>
+       
+    </header>
+    
+    <div class="body">
+        <div class="info">
+            <p><h2>Hi,</h2><h1>I am <p class="Name">Shaharyar Zia</p> a Frontend Developer</h1></p>
+            
+        </div>
+        <div class="lorem">
+            <p>I am a passionate and goal-oriented Computer Science student currently pursuing my BSCS at COMSATS University Islamabad. With a keen interest in front-end development, I'm learning JavaScript and HTML/CSS to build user-friendly web interfaces. Outside of academics, I’m dedicated to personal growth, including developing a healthier lifestyle and building valuable skill sets for my future career.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <button class="hire">Hire Me</button>
+            <button class="exp">Experience</button>
+        </div>
+       
+    </div>
+</body>
+</html>
